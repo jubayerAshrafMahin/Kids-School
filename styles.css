@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", serif;
+}
+/* .quicksand-<uniquifier> {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+:root{
+    --primary-color: #fab004;
+    --secondary-color: #36aeff;
+    --tertiary-color: #2087cb;
+}
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    max-width: 1440px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .navLogo{
+    display: flex;
+    align-items: center;
+  }
+  .navOptions{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  .navOptions p{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  #home{
+    color: var(--primary-color, blue);
+  }
+  #about{
+    color: var(--secondary-color, orange);
+  }
+  #facilities{
+    color: var(--tertiary-color, green);
+  }
+  .primaryButton{
+    background-color: #fab004;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  .schoolTitle{
+    font-size:2.4rem;
+    font-weight: 700;
+  }
+  .navMenu{
+    position:absolute;
+  }
+  .menuImage{
+    width: 30px;
+    visibility: hidden;
+  }
+  
+  @media screen and (max-width:700px) {
+
+    .navOptions, .navButton{
+        position:absolute;
+        visibility: hidden;
+    }
+
+    .menuImage{
+        width: 30px;
+        visibility: visible;
+      }
+    .navMenu{
+        position: static;
+    }
+    
+  }
