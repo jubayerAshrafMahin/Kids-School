@@ -29,15 +29,19 @@
   .navLogo{
     display: flex;
     align-items: center;
+    gap: 5px;
+  }
+  .schoolbagImage{
+    width: 48px;
   }
   .navOptions{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
   }
   .navOptions p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
   }
   #home{
@@ -49,22 +53,55 @@
   #facilities{
     color: var(--tertiary-color, green);
   }
+  #admission{
+    color: rgb(135, 227, 235);
+  }
   .primaryButton{
     background-color: #fab004;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 40px;
+    border-radius: 10px;
     border: none;
+    font-size: 1.3rem;
   }
   .schoolTitle{
-    font-size:2.4rem;
-    font-weight: 700;
+    font-size:2rem;
+    font-weight: 670;
   }
   .navMenu{
     position:absolute;
   }
   .menuImage{
     width: 30px;
+    visibility: hidden;
+  }
+  .heroContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .heroTitle{
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+  }
+  .heroSubtitle{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  .heroText button{
+    background-color: black;
+  }
+  .vision{
+    color: var(--secondary-color);
+  }
+  .empowering{
+    color: var(--primary-color);
+  }
+  hr{
+    border: 1px solid var(--primary-color);
     visibility: hidden;
   }
   
@@ -82,5 +119,15 @@
     .navMenu{
         position: static;
     }
-    
+    hr{
+        visibility: visible;
+    }
+    .heroContainer{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0, 25px
+    }
+    .superKidImage{
+        width: calc(100vw-60px);
+    }
   }
