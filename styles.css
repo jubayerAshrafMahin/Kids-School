@@ -111,7 +111,7 @@
     padding: 80px 0px;
     background-size: 1440px;
   }
-  .standardCurriculumTitle{
+  .standardCurriculumTitle, .storiesTitle{
     font-size: 2.5rem;
     color: black;
     text-align: center;
@@ -166,12 +166,54 @@
   }
   .slider{
     background-color:var(--primary-color);
-    border-radius: 50px;
-    padding: 15px;
+    border-radius: 80px;
+    padding: 15px 17px;
   }
   .leftSlider, .rightSlider{
     width: 30px;
     height: 30px;
+  }
+
+  .storiesContainer{
+    max-width: 1440px;
+    margin:  0 auto;
+  }
+  .storiesCardContainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1.8fr repeat(2, 1fr);
+  }
+  .bigStoryCard{
+    /* max-width: 700px; */
+    padding-bottom: 30px;
+    border: 0.7px solid rgb(180, 180, 180);
+    border-radius: 25px;
+    grid-row: 1 / span 2;
+  }
+  .bigStoryCardImage{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+  .date{
+    position: relative;
+    bottom: 24px;
+    left: 50px;
+    background-color: #36aeff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+  }
+  .bigStoryCardTitle, .bigStoryCardSubtitle{
+    margin: 0 30px 30px 30px;
+  }
+
+  .smallStoryCardTitle{
+    margin: 0 20px 30px 20px;
+  }
+  .smallStoryCard{
+    border: 0.7px solid rgb(180, 180, 180);
+    border-radius: 25px;
   }
   @media screen and (max-width:700px) {
 
@@ -193,13 +235,21 @@
     .heroContainer{
         flex-direction: column-reverse;
         text-align: center;
-        padding: 0, 25px
+        padding: 0 25px;
+        box-sizing: border-box;
+        
     }
-    .superKidImage{
-        width: calc(100vw-60px);
-    }
+    .superKidImage {
+      max-width: 100%;
+      width: 100vw;
+      padding: 0 20px;
+      box-sizing: border-box;
+  }  
     .curriculumCardContainer{
       flex-direction: column;
       padding: 0 20px;
+    }
+    .sliderContainer{
+      visibility: hidden;
     }
   }
